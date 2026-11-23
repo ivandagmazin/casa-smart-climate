@@ -1,1 +1,83 @@
 
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casa Smart Climate</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #101827;
+  color: white;
+  padding: 20px;
+}
+h1 { text-align: center; }
+.card {
+  background: #243247;
+  padding: 20px;
+  border-radius: 18px;
+  margin: 16px 0;
+}
+.temp {
+  font-size: 48px;
+  text-align: center;
+  color: #64d9ff;
+}
+button {
+  padding: 12px 18px;
+  margin: 5px;
+  border: 0;
+  border-radius: 10px;
+  background: #36b9ed;
+  font-size: 16px;
+}
+.status { color: #ffce73; }
+</style>
+</head>
+<body>
+
+<h1>🏠 Casa Smart Climate</h1>
+
+<div class="card">
+<h2>🌡️ Temperatura casa</h2>
+<div class="temp">-- °C</div>
+<p>Riferimento: Smart Life</p>
+<p class="status">In attesa di collegamento</p>
+</div>
+
+<div class="card">
+<h2>🔥 Caldaia Immergas</h2>
+<p>Termostato Smart Life</p>
+<button onclick="avviso()">Accendi</button>
+<button onclick="avviso()">Spegni</button>
+</div>
+
+<div class="card">
+<h2>❄️ Split Hisense 1</h2>
+<button onclick="avviso()">Accendi</button>
+<button onclick="avviso()">Spegni</button>
+</div>
+
+<div class="card">
+<h2>❄️ Split Hisense 2</h2>
+<button onclick="avviso()">Accendi</button>
+<button onclick="avviso()">Spegni</button>
+</div>
+
+<div class="card">
+<h2>❄️ Split Hisense 3</h2>
+<button onclick="avviso()">Accendi</button>
+<button onclick="avviso()">Spegni</button>
+</div>
+
+<script>
+function avviso() {
+  alert("Dispositivo non ancora collegato");
+}
+</script>
+
+</body>
+</html>
+
